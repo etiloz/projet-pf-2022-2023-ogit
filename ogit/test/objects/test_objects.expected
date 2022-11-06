@@ -1,0 +1,128 @@
+CWD : /Users/lozes/Documents/Enseignement/2022-2023/prog-fun-unice/projet/sujet/archive/repo
+hash de obj1 : 3adbbad1791fbae3ec908894c4963870
+hash de obj4 : eb300a7a2a303e6aee681bd0b0cda60a
+is_known 1e423d8532170b358868e1af76688c4a? true
+is_known 2f423d8532170b358868e1af76688c4a? false
+
+CONTENU DU FICHIER REPRESENTANT L'OBJET obj4: 
+obj1;t;3adbbad1791fbae3ec908894c4963870
+obj2;t;84a21a9828c872e099f97fd9540ce398
+obj3;d;d41d8cd98f00b204e9800998ecf8427e
+
+EXECUTION DE LA COMMANDE SHELL tree
+.
+├── foo
+│   ├── bar
+│   │   └── tata.txt
+│   ├── titi.txt
+│   └── toto.txt
+└── toto.txt
+
+2 directories, 4 files
+
+EXECUTION DE LA COMMANDE SHELL rm -f .ogit/objects/*
+
+hash_repo = 9ef6d96530cb3791f0dfb16d157220b6
+
+CONTENU DU FICHIER 9ef6d96530cb3791f0dfb16d157220b6:
+toto.txt;t;1e423d8532170b358868e1af76688c4a
+foo;d;c3ca6ad75c459ecccfdb10b421cbb489
+
+OBJET CORRESPONDANT AU REPO:
+Directory[("foo",true,c3ca6ad75c459ecccfdb10b421cbb489,Directory[("bar",true,87113b72a9d03cbfb8aea342455d710f,Directory[("tata.txt",false,a5b0164846456eb4c32115f57cfc3a38,Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+"))]);("titi.txt",false,ec7e8e8ce16f3fe945d3c4c0955315d3,Text("Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. 
+Maecenas adipiscing ante non diam sodales hendrerit.
+Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. 
+Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. 
+Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus 
+sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. 
+"));("toto.txt",false,bb6d4c2870158394ea6b4c6ec804d61f,Text("Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, 
+euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, 
+non fermentum diam nisl sit amet erat. Duis semper. 
+Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+Pellentesque congue. Ut in risus volutpat libero pharetra tempor. 
+Cras vestibulum bibendum augue. Praesent egestas leo in pede. 
+"))]);("toto.txt",false,1e423d8532170b358868e1af76688c4a,Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, 
+euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, 
+non fermentum diam nisl sit amet erat. Duis semper. 
+Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+Pellentesque congue. Ut in risus volutpat libero pharetra tempor. 
+Cras vestibulum bibendum augue. Praesent egestas leo in pede. 
+Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. 
+Maecenas adipiscing ante non diam sodales hendrerit.
+Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. 
+Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. 
+Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus 
+sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. 
+Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. 
+
+Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet."))]
+
+EXECUTION DE clean_work_directory
+
+EXECUTION DE LA COMMANDE SHELL tree -a
+.
+└── .ogit
+    ├── HEAD
+    ├── logs
+    └── objects
+        ├── 1e423d8532170b358868e1af76688c4a
+        ├── 87113b72a9d03cbfb8aea342455d710f
+        ├── 9ef6d96530cb3791f0dfb16d157220b6
+        ├── a5b0164846456eb4c32115f57cfc3a38
+        ├── bb6d4c2870158394ea6b4c6ec804d61f
+        ├── c3ca6ad75c459ecccfdb10b421cbb489
+        └── ec7e8e8ce16f3fe945d3c4c0955315d3
+
+3 directories, 8 files
+
+EXECUTION DE restore_work_directory
+
+EXECUTION DE LA COMMANDE SHELL tree -a
+.
+├── .ogit
+│   ├── HEAD
+│   ├── logs
+│   └── objects
+│       ├── 1e423d8532170b358868e1af76688c4a
+│       ├── 87113b72a9d03cbfb8aea342455d710f
+│       ├── 9ef6d96530cb3791f0dfb16d157220b6
+│       ├── a5b0164846456eb4c32115f57cfc3a38
+│       ├── bb6d4c2870158394ea6b4c6ec804d61f
+│       ├── c3ca6ad75c459ecccfdb10b421cbb489
+│       └── ec7e8e8ce16f3fe945d3c4c0955315d3
+├── foo
+│   ├── bar
+│   │   └── tata.txt
+│   ├── titi.txt
+│   └── toto.txt
+└── toto.txt
+
+5 directories, 12 files
+
+EXECUTION DE LA COMMANDE SHELL cat toto.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, 
+euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, 
+non fermentum diam nisl sit amet erat. Duis semper. 
+Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. 
+Pellentesque congue. Ut in risus volutpat libero pharetra tempor. 
+Cras vestibulum bibendum augue. Praesent egestas leo in pede. 
+Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. 
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. 
+Maecenas adipiscing ante non diam sodales hendrerit.
+Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. 
+Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. 
+Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus 
+sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. 
+Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. 
+
+Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.

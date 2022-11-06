@@ -1,0 +1,5 @@
+(test 
+  (name test_objects)
+  (libraries ogitlib)
+  (modules test_objects)
+)

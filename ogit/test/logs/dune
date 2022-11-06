@@ -1,0 +1,5 @@
+(test 
+  (name test_logs)
+  (libraries ogitlib)
+  (modules test_logs)
+)

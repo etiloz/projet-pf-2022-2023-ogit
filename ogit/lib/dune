@@ -1,0 +1,12 @@
+(executable
+ (name ogit)
+ (public_name ogit)
+ (libraries ogitlib)
+ (modules ogit)
+)
+
+(library
+ (name ogitlib)
+ (modules objects logs commands)
+ (libraries unix)
+)

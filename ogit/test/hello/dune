@@ -1,0 +1,5 @@
+(test 
+  (name test_hello)
+  (libraries hello)
+  (modules test_hello)
+)

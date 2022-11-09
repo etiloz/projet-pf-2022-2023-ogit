@@ -5,8 +5,7 @@ open Objects
 (* on place le programme dans repo *)
 let repo_root = "../../../../../repo"
 let () = 
-  Sys.chdir repo_root;
-  Format.printf "CWD : %s@." (Sys.getcwd ())
+  Sys.chdir repo_root
 
 
 

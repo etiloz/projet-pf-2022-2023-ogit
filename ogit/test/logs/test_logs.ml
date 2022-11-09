@@ -4,10 +4,9 @@ open Logs
 (* on se place dans le répertoire repo/ *)
 let repo_root = "../../../../../repo"
 let () = 
-  Sys.chdir repo_root;
-  Format.printf "CWD : %s@." (Sys.getcwd ())
+  Sys.chdir repo_root
 
-
+  
 (* test de date_fm *)
 let _ = Unix.time ()
 let date_bidon = fst (Unix.mktime { 

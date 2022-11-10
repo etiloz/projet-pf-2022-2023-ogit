@@ -4,9 +4,11 @@ open Logs
 (* on se place dans le répertoire repo/ *)
 let repo_root = "../../../../../repo"
 let () = 
-  Sys.chdir repo_root;
-  Format.printf "CWD : %s@." (Sys.getcwd ())
+  Sys.chdir repo_root
 
+(* on prepare le repertoire .ogit *)
+let _ = Sys.command "rm -rf .ogit"
+let _ = Sys.command "cp -r ../repo.origin/.ogit ."
 
 (* test de date_fm *)
 let _ = Unix.time ()
@@ -22,9 +24,8 @@ let date_bidon = fst (Unix.mktime {
 
 let () = Format.printf "date_fm date_bidon = %s@."  (date_fm date_bidon)
 
-(* test de get_head et set_head *)
-let head_courant = get_head ()
 
+(* test de get_head et set_head *)
 
 let head_bidon = [
   Digest.string "hello";
@@ -34,8 +35,6 @@ let head_bidon = [
 let head_bidon2 = 
   set_head head_bidon;
   get_head ()
-
-let () = set_head head_courant (** on remet la tête initiale en place **)
 
 let () = Format.printf "head_bidon = head_bidon2 ? %b@." (head_bidon = head_bidon2)
 
@@ -52,8 +51,5 @@ let commit_bidon = {
 
 let hash_du_fichier_log = store_commit commit_bidon
 let commit_bidon2 = read_commit hash_du_fichier_log
-
-let () = (* on "nettoie" le répertoire .ogit/logs *)
-  Sys.remove (".ogit/logs/" ^ (Digest.to_hex hash_du_fichier_log))
 
 let () = Format.printf "commit_bidon = commit_bidon2 ? %b@." (commit_bidon = commit_bidon2)

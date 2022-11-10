@@ -1,0 +1,114 @@
+CWD : repo
+
+EXECUTION DE ogit_init
+
+NOMBRE DE LOGS : 1
+
+EXECUTION DE LA COMMANDE SHELL ls .ogit/objects
+1e423d8532170b358868e1af76688c4a
+87113b72a9d03cbfb8aea342455d710f
+9ef6d96530cb3791f0dfb16d157220b6
+a5b0164846456eb4c32115f57cfc3a38
+bb6d4c2870158394ea6b4c6ec804d61f
+c3ca6ad75c459ecccfdb10b421cbb489
+ec7e8e8ce16f3fe945d3c4c0955315d3
+
+AJOUT D'UN FICHIER VIDE ET EXECUTION de ogit_commit
+
+EXECUTION DE LA COMMANDE SHELL tree
+.
+├── empty.txt
+├── foo
+│   ├── bar
+│   │   └── tata.txt
+│   ├── titi.txt
+│   └── toto.txt
+└── toto.txt
+
+2 directories, 5 files
+
+NOMBRE DE LOGS : 2
+
+EXECUTION DE LA COMMANDE SHELL ls .ogit/objects
+1e423d8532170b358868e1af76688c4a
+68b329da9893e34099c7d8ad5cb9c940
+789d80b218786e139de0786f0e45e333
+87113b72a9d03cbfb8aea342455d710f
+9ef6d96530cb3791f0dfb16d157220b6
+a5b0164846456eb4c32115f57cfc3a38
+bb6d4c2870158394ea6b4c6ec804d61f
+c3ca6ad75c459ecccfdb10b421cbb489
+ec7e8e8ce16f3fe945d3c4c0955315d3
+
+EXECUTION DE ogit_checkout.
+EXECUTION DE LA COMMANDE SHELL tree
+.
+├── foo
+│   ├── bar
+│   │   └── tata.txt
+│   ├── titi.txt
+│   └── toto.txt
+└── toto.txt
+
+2 directories, 4 files
+
+NOMBRE DE LOGS : 2
+
+EXECUTION DE LA COMMANDE SHELL ls .ogit/objects
+1e423d8532170b358868e1af76688c4a
+68b329da9893e34099c7d8ad5cb9c940
+789d80b218786e139de0786f0e45e333
+87113b72a9d03cbfb8aea342455d710f
+9ef6d96530cb3791f0dfb16d157220b6
+a5b0164846456eb4c32115f57cfc3a38
+bb6d4c2870158394ea6b4c6ec804d61f
+c3ca6ad75c459ecccfdb10b421cbb489
+ec7e8e8ce16f3fe945d3c4c0955315d3
+
+AJOUT D'UN FICHIER ET EXECUTION de ogit_commit
+
+EXECUTION de ogit_merge
+
+NOMBRE DE LOGS : 3
+
+NOMBRE HEAD : 1
+
+NOMBRE PARENTS : 2
+
+EXECUTION DE LA COMMANDE SHELL tree
+.
+├── empty.txt
+├── foo
+│   ├── bar
+│   │   └── tata.txt
+│   ├── rep.txt
+│   ├── titi.txt
+│   └── toto.txt
+└── toto.txt
+
+2 directories, 6 files
+
+CONFLIT SUR empty.txt
+
+EXECUTION de ogit_merge
+CONFLICT (object): Merge conflict in ./empty.txt
+Automatic merge failed; fix conflicts and then commit the result
+
+NOMBRE DE LOGS : 3
+
+NOMBRE HEAD : 2
+
+NOMBRE PARENTS : 0
+
+EXECUTION DE LA COMMANDE SHELL tree
+.
+├── empty.txt..cl
+├── empty.txt..cr
+├── foo
+│   ├── bar
+│   │   └── tata.txt
+│   ├── titi.txt
+│   └── toto.txt
+└── toto.txt
+
+2 directories, 6 files

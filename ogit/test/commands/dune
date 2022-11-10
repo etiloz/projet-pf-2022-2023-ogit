@@ -1,0 +1,5 @@
+(test 
+  (name test_commands)
+  (libraries ogitlib)
+  (modules test_commands)
+)

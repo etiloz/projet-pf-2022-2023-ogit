@@ -1,3 +1,4 @@
+CWD : /Users/lozes/Documents/Enseignement/2022-2023/prog-fun-unice/projet/sujet/archive/repo
 hash de obj1 : 3adbbad1791fbae3ec908894c4963870
 hash de obj4 : eb300a7a2a303e6aee681bd0b0cda60a
 is_known 1e423d8532170b358868e1af76688c4a? true
@@ -70,7 +71,6 @@ EXECUTION DE LA COMMANDE SHELL tree -a
 └── .ogit
     ├── HEAD
     ├── logs
-    │   └── 934258186f418bbb65825ae6c2d2af31
     └── objects
         ├── 1e423d8532170b358868e1af76688c4a
         ├── 87113b72a9d03cbfb8aea342455d710f
@@ -80,7 +80,7 @@ EXECUTION DE LA COMMANDE SHELL tree -a
         ├── c3ca6ad75c459ecccfdb10b421cbb489
         └── ec7e8e8ce16f3fe945d3c4c0955315d3
 
-3 directories, 9 files
+3 directories, 8 files
 
 EXECUTION DE restore_work_directory
 
@@ -89,7 +89,6 @@ EXECUTION DE LA COMMANDE SHELL tree -a
 ├── .ogit
 │   ├── HEAD
 │   ├── logs
-│   │   └── 934258186f418bbb65825ae6c2d2af31
 │   └── objects
 │       ├── 1e423d8532170b358868e1af76688c4a
 │       ├── 87113b72a9d03cbfb8aea342455d710f
@@ -105,7 +104,7 @@ EXECUTION DE LA COMMANDE SHELL tree -a
 │   └── toto.txt
 └── toto.txt
 
-5 directories, 13 files
+5 directories, 12 files
 
 EXECUTION DE LA COMMANDE SHELL cat toto.txt
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
